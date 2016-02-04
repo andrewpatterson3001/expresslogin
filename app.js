@@ -5,16 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var MongoClient = require('mongodb').MongoClient;
-var assert = require('assert');
-
-var url = 'mongodb://localhost:3000/test';
-MongoClient.connect(url, function(err, db) {
-  assert.equal(null, err);
-  console.log("Connected correctly to server.");
-  db.close();
-});
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
