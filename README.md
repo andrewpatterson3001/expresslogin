@@ -1,0 +1,1 @@
+Just a Node.js and Express app that logs a user in and greets them. Nothing fancy. No tests yet.
